@@ -12,8 +12,8 @@ class ModuleAdmin(admin.ModelAdmin):
 
 @admin.register(Question)
 class QuestionAdmin(admin.ModelAdmin):
-    list_display=['question_text','module','correct']
-    ordering=['module']
+    list_display=['id','question_text','module','correct']
+    list_filter=['module']
 
 # Register your models here.
 # admin.site.register(Module,ModuleAdmin)
