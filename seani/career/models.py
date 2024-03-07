@@ -22,3 +22,10 @@ class Career(models.Model):
         max_length=10,
         choices=LEVELS,
     )
+
+    def __str__(self):
+        return self.short_name
+    
+    class Meta:
+        verbose_name='carrera'
+        verbose_name_plural='carreras'
