@@ -6,17 +6,10 @@
 
 <ul>
     {% for module in user.exam.modules.all %}
-    <li>{{ module.description }}</li>
+    <li><a href="{% url 'exam:question' module.id %}">{{ module.description }}</a></li>
     {% endfor %}
 </ul>
 <hr>
-<ul>
-    {% for question in user.exam.questions.all %}
-    <li>
-        {{ question.question_text }}
-    </li>
-    {% endfor %}
-</ul>
 
 {{ current_user }}
 <form action="{% url 'logout' %}" method="post">
