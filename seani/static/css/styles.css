@@ -1,0 +1,103 @@
+body {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    display:flex;
+    justify-content: center;
+    background-color: #1C1C1C;
+    color: aliceblue;
+}
+
+.container {
+    width:70%;
+    text-align:center;
+}
+
+.container h1 {
+    color: rgb(255, 115, 0) ;
+}
+
+.container a {
+    text-decoration:none;
+    color:rgb(0, 196, 23);
+    font-weight:bold;
+}
+
+.container a:hover {
+    color:rgb(0, 255, 30);
+    transition: 100ms;
+}
+
+.container a:active {
+    color:rgb(255, 115, 0);
+}
+
+.container a::after {
+    color:purple;
+}
+
+.container form input[type="submit"] {
+    border: none;
+    background-color:blueviolet;
+    color:white;
+    font-weight:bold;
+    width:200px;
+    height:50px;
+    margin:10px;
+    border-radius: 10px;
+    transition: 100ms;
+}
+
+.container form input[type="submit"]:hover {
+    background-color: rgb(208, 89, 208);
+}
+
+.container form input[type="submit"]:active {
+    background-color:#5d1d99;
+}
+
+.container form input[type="text"], 
+.container form input[type="password"] {
+    margin:5px;
+    padding: 5px;
+    border-radius: 5px;
+    transition: 200ms;
+    background-color: #F0F0F0;
+}
+
+.container form input[type="text"]:focus,
+.container form input[type="password"]:focus {
+    background-color: rgb(255, 221, 194);
+}
+
+.container form input[type="text"]:active,
+.container form input[type="password"]:active {
+    background-color: rgb(254, 181, 122);
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    background-color: rgb(0, 87, 0);
+    padding: 50px;
+    border-radius: 25px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: rgb(0, 196, 23);
+}
+
+.grid-item {
+    background-color:rgb(255, 221, 194);
+    padding: 50px;
+    margin: 10px;
+    border-radius: 5px;
+    border-style: solid;
+    border-width: 5px;
+    border-color: rgb(255, 115, 0);
+}
+
+.ans {
+    background-color: palegreen;
+    color: rgb(0, 87, 0);
+    border-radius: 4px;
+    padding: 20px;
+    margin: 15px;
+}

@@ -2,18 +2,21 @@
 
 {% block title %}Aspirante - Inicio{% endblock %}
 {% block content %}
+<div class="container">
 <h1>Bienvenido, {{ user.first_name }} </h1>
 
-<ul>
+<div class="grid-container">
     {% for module in user.exam.modules.all %}
-    <li><a href="{% url 'exam:question' module.id %}">{{ module.description }}</a></li>
+    <div class="grid-item"><a href="{% url 'exam:question' module.id %}">{{ module.description }}</a></div>
     {% endfor %}
-</ul>
+</div>
 <hr>
 
 {{ current_user }}
-<form action="{% url 'logout' %}" method="post">
-    {% csrf_token %}
-    <input type="submit" value="Salir">
-</form>
+
+    <form action="{% url 'logout' %}" method="post">
+        {% csrf_token %}
+        <input type="submit" value="Salir">
+    </form>
+</div>
 {% endblock %}
