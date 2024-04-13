@@ -82,7 +82,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'seani.wsgi.application'
+WSGI_APPLICATION = 'seani.wsgi.app'
 
 
 # Database
