@@ -1,5 +1,5 @@
-# Created by https://www.toptal.com/developers/gitignore/api/python,django,windows,linux,macos
-# Edit at https://www.toptal.com/developers/gitignore?templates=python,django,windows,linux,macos
+# Created by https://www.toptal.com/developers/gitignore/api/django,python,visualstudiocode,venv
+# Edit at https://www.toptal.com/developers/gitignore?templates=django,python,visualstudiocode,venv
 
 ### Django ###
 *.log
@@ -171,54 +171,6 @@ cython_debug/
 #  option (not recommended) you can uncomment the following to ignore the entire idea folder.
 #.idea/
 
-### Linux ###
-*~
-
-# temporary files which can be created if a process still has a handle open of a deleted file
-.fuse_hidden*
-
-# KDE directory preferences
-.directory
-
-# Linux trash folder which might appear on any partition or disk
-.Trash-*
-
-# .nfs files are created when an open file is removed but is still being accessed
-.nfs*
-
-### macOS ###
-# General
-.DS_Store
-.AppleDouble
-.LSOverride
-
-# Icon must end with two \r
-Icon
-
-
-# Thumbnails
-._*
-
-# Files that might appear in the root of a volume
-.DocumentRevisions-V100
-.fseventsd
-.Spotlight-V100
-.TemporaryItems
-.Trashes
-.VolumeIcon.icns
-.com.apple.timemachine.donotpresent
-
-# Directories potentially created on remote AFP share
-.AppleDB
-.AppleDesktop
-Network Trash Folder
-Temporary Items
-.apdisk
-
-### macOS Patch ###
-# iCloud generated files
-*.icloud
-
 ### Python ###
 # Byte-compiled / optimized / DLL files
 
@@ -311,30 +263,35 @@ poetry.toml
 # LSP config files
 pyrightconfig.json
 
-### Windows ###
-# Windows thumbnail cache files
-Thumbs.db
-Thumbs.db:encryptable
-ehthumbs.db
-ehthumbs_vista.db
+### venv ###
+# Virtualenv
+# http://iamzed.com/2009/05/07/a-primer-on-virtualenv/
+[Bb]in
+[Ii]nclude
+[Ll]ib
+[Ll]ib64
+[Ll]ocal
+[Ss]cripts
+pyvenv.cfg
+pip-selfcheck.json
 
-# Dump file
-*.stackdump
+### VisualStudioCode ###
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+!.vscode/*.code-snippets
 
-# Folder config file
-[Dd]esktop.ini
+# Local History for Visual Studio Code
+.history/
 
-# Recycle Bin used on file shares
-$RECYCLE.BIN/
+# Built Visual Studio Code Extensions
+*.vsix
 
-# Windows Installer files
-*.cab
-*.msi
-*.msix
-*.msm
-*.msp
+### VisualStudioCode Patch ###
+# Ignore all local history of files
+.history
+.ionide
 
-# Windows shortcuts
-*.lnk
-
-# End of https://www.toptal.com/developers/gitignore/api/python,django,windows,linux,macos
+# End of https://www.toptal.com/developers/gitignore/api/django,python,visualstudiocode,venv
