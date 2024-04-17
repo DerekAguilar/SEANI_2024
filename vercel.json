@@ -1,15 +1,8 @@
 {
-  "builds": [
-      {
-          "src": "seani/wsgi.py",
-          "use": "@vercel/python",
-          "config": { "maxLambdaSize": "15mb", "runtime": "python3.9" }
-      }
-  ],
   "routes": [
-      {
-          "src": "/(.*)",
-          "dest": "seani/wsgi.py"
-      }
+    {
+      "src": "/(.*)",
+      "dest": "seani/wsgi.py"
+    }
   ]
 }
