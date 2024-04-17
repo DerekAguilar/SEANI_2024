@@ -34,7 +34,7 @@ SECRET_KEY = 'django-insecure-e7q@x_sn^)+a&6%p6-(+u30f%x*kn%vvsas%-#9@kf!@v@fk@y
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['127.0.0.1','.vercel.app']
+ALLOWED_HOSTS = ['.vercel.app','127.0.0.1']
 
 
 # Application definition
@@ -96,9 +96,6 @@ DATABASES = {
         'PASSWORD':'',
         'HOST':'localhost',
         'PORT':3306,
-        'OPTIONS': {
-            "init_command": "SET sql_mode='STRICT_TRANS_TABLES'"
-        }
     }
 }
 
